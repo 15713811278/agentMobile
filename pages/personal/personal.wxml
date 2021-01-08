@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="contain">
+	<view class="user_head">
+		<view class="user_headTop">
+		</view>
+		<view class="head_right">
+			<view class="userImg">
+				<image src="../../pic/agentImg/user.png"></image>
+			</view>
+			<view class="userInfo">
+				<view class="userName">张宗禄</view>
+				<view class="userTitle">项目管理专家</view>
+			</view>
+			<view class="userChat">
+				<image src="../../pic/agentImg/wechat.jpg"></image>
+			</view>
+		</view>
+	</view>
+	<scroll-view class="scrollView">
+		<view class="user_menu">
+			<view>
+				<text>0元</text>
+				<text>本月收入</text>
+			</view>
+			<view>
+				<text>1598.4元</text>
+				<text>账户余额</text>
+			</view>
+			<view>
+				<text>0个</text>
+				<text>客户</text>
+			</view>
+		</view>
+		<view class="user_share">
+			<view class="flex_box  r-line">
+				<navigator>
+					<view class="flex">
+						<view class="flex_grow">
+							<text class="text1">分享咨询</text>
+							<text class="text2">最新行业资询</text>
+						</view>
+						<view class="flex_auto">
+							<view class="share_img">
+								<image src="../../pic/agentImg/nav-fl1.png"></image>
+							</view>
+						</view>
+					</view>
+				</navigator>
+			</view>
+			<view class="flex_box">
+				<navigator>
+					<view class="flex">
+						<view class="flex_grow">
+							<text class="text1">分享产品</text>
+							<text class="text2">提升转化率</text>
+						</view>
+						<view class="flex_auto">
+							<view class="share_img">
+								<image src="../../pic/agentImg/nav-fl2.png"></image>
+							</view>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+		<view class="user_postcard">
+			<view class="postcard_one">行业海报</view>
+			<view class="canvasList">
+				<view class="list_flex">
+					<image src="../../pic/agentImg/postcard1.jpg"></image>
+				</view>
+				<view class="list_flex">
+					<image src="../../pic/agentImg/postcard2.jpg"></image>
+				</view>
+				<view class="list_flex">
+					<image src="../../pic/agentImg/postcard3.jpg"></image>
+				</view>
+			</view>
+			<navigator class="link">更多</navigator>
+		</view>
+	</scroll-view>
+</view>
