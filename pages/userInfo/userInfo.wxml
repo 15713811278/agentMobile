@@ -1,0 +1,19 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view>
+	<view>
+		<van-cell-group>
+			<van-field value="{{ username }}" required clearable label="用户名" placeholder="请输入用户名" />
+
+			<van-field value="{{ password }}" type="number" clearable label="电话" placeholder="请输入电话" required />
+		</van-cell-group>
+		<van-cell-group>
+			<van-field value="{{ username }}" clearable label="邮箱" placeholder="请输入邮箱" />
+
+			<van-field value="{{ password }}" type="number" clearable label="身份证号码" placeholder="请输入身份证号码" border="{{ false }}" />
+		</van-cell-group>
+	</view>
+	<view>
+		<van-button class="subTi" color="#fe6a00">确认修改</van-button>
+	</view>
+
+</view>

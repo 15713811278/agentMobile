@@ -2,21 +2,25 @@
 <view class="contain">
 	<view class="user_head">
 		<view class="user_headTop">
+			<navigator target="self" url="../../pages/income/income" open-type="navigate">
+				<van-icon name="chat-o" color='white' size="20px" />
+			</navigator>
 		</view>
 		<view class="head_right">
 			<view class="userImg">
-				<image src="../../pic/agentImg/user.png"></image>
+				<image bindtap="toUser" src="../../pic/agentImg/user.png"></image>
 			</view>
 			<view class="userInfo">
 				<view class="userName">张宗禄</view>
-				<view class="userTitle">项目管理专家</view>
+				<view class="userTitle">
+					<van-icon name="friends" color='white' size="15px" />项目管理专家</view>
 			</view>
 			<view class="userChat">
 				<image src="../../pic/agentImg/wechat.jpg"></image>
 			</view>
 		</view>
 	</view>
-	<scroll-view class="scrollView">
+	<scroll-view   class="scrollView" scroll-y="true">
 		<view class="user_menu">
 			<view>
 				<text>0元</text>
@@ -26,7 +30,7 @@
 				<text>1598.4元</text>
 				<text>账户余额</text>
 			</view>
-			<view>
+			<view bindtap="toCustomer">
 				<text>0个</text>
 				<text>客户</text>
 			</view>
@@ -76,7 +80,7 @@
 					<image src="../../pic/agentImg/postcard3.jpg"></image>
 				</view>
 			</view>
-			<navigator class="link">更多</navigator>
+			<navigator target="self" url="../../pages/postcard/postcard" open-type="navigate" class="link">更多</navigator>
 		</view>
 	</scroll-view>
 </view>

@@ -1,7 +1,4 @@
-//index.js
-//获取应用实例
-// const app = getApp()
-
+// pages/costLZ/costLZ.js
 Page({
 
   /**
@@ -9,16 +6,6 @@ Page({
    */
   data: {
 
-  },
-  toUser() {
-    wx.navigateTo({
-      url: '../../pages/userInfo/userInfo',
-    })
-  },
-  toCustomer(){
-    wx.navigateTo({
-      url: '../../pages/customer/customer',
-    })
   },
 
   /**

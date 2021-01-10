@@ -1,0 +1,52 @@
+<!--pages/customer/customer.wxml-->
+<view class="costomer">
+	<view class="costomer_top">
+		<view>
+			<text>本周访问次数</text>
+			<text><text class="number">0</text>次</text>
+		</view>
+	</view>
+	<view class="cost_second">
+		<view class="visitor" bindtap="toFang">
+				<text>累计访客</text>
+				<text>19人</text>
+		</view>
+		<view class="users" bindtap="toZhu">
+			<text>累计注册新用户</text>
+			<text>2人</text>
+		</view>
+	</view>
+	<view class="cost_third">
+		<view class="flex">
+			<view class="flex_left">
+				<van-icon name="gift-o" size="20px" color="skyblue" /><text>PowerPIP</text>
+			</view>
+			<view class="flex_right">2次</view>
+		</view>
+		<view class="flex">
+			<view class="flex_left">
+				<van-icon name="gift-o" size="20px" color="skyblue" /><text>PowerON</text>
+			</view>
+			<view class="flex_right">2次</view>
+		</view>
+		<view class="flex">
+			<view class="flex_left">
+				<van-icon name="gift-o" size="20px" color="skyblue" /><text>PowerEDU</text>
+			</view>
+			<view class="flex_right">2次</view>
+		</view>
+	</view>
+	<view class="cost_four">
+		<view class="cost_four_top">
+			<view>
+				<text>客户订单</text>
+			</view>
+			<view>
+				<text>6单/9元</text>
+			</view>
+		</view>
+		<view>
+
+		</view>
+	</view>
+</view>

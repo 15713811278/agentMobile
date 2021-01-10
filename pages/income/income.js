@@ -1,24 +1,11 @@
-//index.js
-//获取应用实例
-// const app = getApp()
-
+// pages/income/income.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  toUser() {
-    wx.navigateTo({
-      url: '../../pages/userInfo/userInfo',
-    })
-  },
-  toCustomer(){
-    wx.navigateTo({
-      url: '../../pages/customer/customer',
-    })
+    active: 0,
   },
 
   /**

@@ -1,7 +1,4 @@
-//index.js
-//获取应用实例
-// const app = getApp()
-
+// pages/customer/customer.js
 Page({
 
   /**
@@ -10,17 +7,16 @@ Page({
   data: {
 
   },
-  toUser() {
+  toFang(){
     wx.navigateTo({
-      url: '../../pages/userInfo/userInfo',
+      url: '../../pages/costLF/costLF',
     })
   },
-  toCustomer(){
+  toZhu(){
     wx.navigateTo({
-      url: '../../pages/customer/customer',
+      url: '../../pages/costLZ/costLZ',
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

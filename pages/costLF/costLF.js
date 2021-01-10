@@ -1,24 +1,11 @@
-//index.js
-//获取应用实例
-// const app = getApp()
-
+// pages/costLF/costLF.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  toUser() {
-    wx.navigateTo({
-      url: '../../pages/userInfo/userInfo',
-    })
-  },
-  toCustomer(){
-    wx.navigateTo({
-      url: '../../pages/customer/customer',
-    })
+    date: '2016-09-01',
   },
 
   /**
@@ -26,6 +13,12 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  bindDateChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value
+    })
   },
 
   /**

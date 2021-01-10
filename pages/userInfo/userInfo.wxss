@@ -1,0 +1,13 @@
+/* pages/userInfo/userInfo.wxss */
+.van-field__body input {
+  text-align: right;
+}
+
+.subTi {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  background-color: #fe6a00;
+  text-align: center;
+}

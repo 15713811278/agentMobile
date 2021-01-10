@@ -1,26 +1,15 @@
-//index.js
-//获取应用实例
-// const app = getApp()
-
+// pages/postcard/postcard.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    active: 0,
+  },
+  onChange(event) {
 
   },
-  toUser() {
-    wx.navigateTo({
-      url: '../../pages/userInfo/userInfo',
-    })
-  },
-  toCustomer(){
-    wx.navigateTo({
-      url: '../../pages/customer/customer',
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */

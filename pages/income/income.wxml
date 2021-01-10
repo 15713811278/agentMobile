@@ -1,0 +1,9 @@
+<!--pages/income/income.wxml-->
+<view class="con">
+	<view>
+		<van-tabs color="#fe6a00" line-width="120px" border="true" title-active-color="#fe6a00" swipeable="true" title-inactive-color="#000" active="{{ active }}" bind:change="onChange">
+			<van-tab title="产品彩页">内容 1</van-tab>
+			<van-tab title="节日问候">内容 2</van-tab>
+		</van-tabs>
+	</view>
+</view>

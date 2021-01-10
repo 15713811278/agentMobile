@@ -1,15 +1,24 @@
 {
-  "pages":[
+  "pages": [
     "pages/personal/personal",
-    "pages/list/list"
-   
-
+    "pages/customer/customer",
+    
+    "pages/postcard/postcard",
+    
+    "pages/userInfo/userInfo",
+    "pages/income/income",
+    "pages/list/list",
+    "pages/costLF/costLF",
+    "pages/costLZ/costLZ"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
+  }
 }
