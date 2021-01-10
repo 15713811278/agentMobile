@@ -20,7 +20,7 @@
 			</view>
 		</view>
 	</view>
-	<scroll-view   class="scrollView" scroll-y="true">
+	<view class="second">
 		<view class="user_menu">
 			<view>
 				<text>0元</text>
@@ -82,5 +82,5 @@
 			</view>
 			<navigator target="self" url="../../pages/postcard/postcard" open-type="navigate" class="link">更多</navigator>
 		</view>
-	</scroll-view>
+	</view>
 </view>
