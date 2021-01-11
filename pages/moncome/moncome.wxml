@@ -1,0 +1,21 @@
+<!--pages/moncome/moncome.wxml-->
+<view class="contain">
+	<view>
+		<van-dropdown-menu>
+			<van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+			<van-dropdown-item id="item" title="{{ date }}" bind:open="itemOpen">
+				
+				
+				<!-- <picker mode="date" fields='month' value="{{date}}" start="2015-09" end="2020-09" bindchange="bindDateChange">
+					<view class="picker">
+						当前选择: {{date}}
+					</view>
+				</picker> -->
+				<!-- <van-datetime-picker bind:cancel="onCancel" bind:confirm="onConfirm" type="year-month" value="{{ currentDate }}" min-date="{{ minDate }}" bind:input="onInput" /> -->
+			</van-dropdown-item>
+		</van-dropdown-menu>
+	</view>
+  <van-popup show="{{ show }}" position="bottom"  bind:close="onClose" overlay="{{false}}">
+    <van-datetime-picker type="year-month" value="{{ currentDate }}" min-date="{{ minDate }}" bind:confirm="onConfirm" bind:input="onInput" />
+  </van-popup>
+</view>

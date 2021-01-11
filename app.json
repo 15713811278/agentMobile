@@ -1,18 +1,18 @@
 {
   "pages": [
-    "pages/costLF/costLF",
+    "pages/moncome/moncome",
     "pages/personal/personal",
+    "pages/account/account",
+    "pages/customer/customer",
+    "pages/costLF/costLF",
     "pages/product/product",
     "pages/reflect/reflect",
-    "pages/account/account",
     "pages/extract/extract",
     "pages/addbank/addbank",
     "pages/income/income",
-    "pages/customer/customer",
     "pages/postcard/postcard",
     "pages/userInfo/userInfo",
     "pages/list/list",
-   
     "pages/costLZ/costLZ"
   ],
   "window": {

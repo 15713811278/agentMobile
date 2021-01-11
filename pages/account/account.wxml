@@ -1,8 +1,10 @@
-<!--pages/account/account.wxml-->
 <view class="contain">
 	<view style="height: calc(100% - 88px);">
-		<view class="product-box1">
+		<!--index.wxml-->
+		<view class="container">
+			<ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
 		</view>
+
 		<view class="product-box">
 			<navigator class="product-list" open-type="navigate" url="../../pages/addbank/addbank">
 				<view class="flex">
@@ -19,7 +21,7 @@
 			</navigator>
 		</view>
 		<view class="product-box">
-			<navigator class="product-list"  open-type="navigate" url="../../pages/extract/extract">
+			<navigator class="product-list" open-type="navigate" url="../../pages/extract/extract">
 				<view class="flex">
 					<view class="flex-grow">
 						<view class="sub-txt">提现记录</view>

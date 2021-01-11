@@ -25,6 +25,11 @@ Page({
       url: '../../pages/account/account',
     })
   },
+  toMoncome(){
+    wx.navigateTo({
+      url: '../../pages/moncome/moncome',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

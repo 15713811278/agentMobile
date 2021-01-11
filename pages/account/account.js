@@ -1,66 +1,64 @@
 // pages/account/account.js
+import * as echarts from '../../ec-canvas/echarts';
+
+const app = getApp();
+
+function initChart(canvas, width, height, dpr) {
+  const chart = echarts.init(canvas, null, {
+    width: width,
+    height: height,
+    devicePixelRatio: dpr // new
+  });
+  canvas.setChart(chart);
+
+  var option = {
+    backgroundColor: "#ffffff",
+    color: ["#37A2DA", "#FFDB5C", "#FF9F7F"],
+    legend: {
+      orient:"vertical",
+      bottom:"center",
+      right:'30px',
+      position: 'right',
+      verticalAlign: 'center',
+      custom: true,
+      itemMarginBottom: 10,
+      selectedMode:false,
+      nameStyle: {
+        fill: '#808080',
+        fontSize: '14',
+        width: 80,
+      }, // 图例项 key 值文本样式
+    },
+    series: [{
+      label: {
+        show: false,
+        position: "left"
+      },
+      type: 'pie',
+      center: ['25%', '50%'],
+      radius: ['40%', '60%'],
+      data: [{
+        value: 55,
+        name: '冻结税金：402.4'
+      }, {
+        value: 38,
+        name: '可提现：1597.6'
+      }],
+      labelLine: {
+        show: false
+      }
+    }]
+  };
+
+  chart.setOption(option);
+  return chart;
+}
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    ec: {
+      onInit: initChart
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
-})
+  onReady() {}
+});

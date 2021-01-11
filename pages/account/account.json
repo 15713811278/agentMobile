@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "ec-canvas": "../../ec-canvas/ec-canvas"
   },
   "navigationBarTitleText": "账户余额"
 }

@@ -9,7 +9,7 @@
 	<view class="">
 		<view class="new-list">
 			<view class="news-list-box">
-				<navigator class="flex" url="https://yun.powerpms.com/appCloud/PPE.html">
+				<navigator class="flex" url="https://pay.powerpms.com/appCloud/PPE.html">
 					<view class="news-img ">
 						<image></image>
 					</view>

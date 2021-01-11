@@ -71,3 +71,6 @@ van-cell {
   background-color: rgb(48, 132, 212);
   /* background-color: skyblue; */
 }
+.van-field__input{
+  text-align: right !important;
+}

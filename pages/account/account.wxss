@@ -5,11 +5,14 @@
   height: 100vh;
 }
 
-.product-box1 {
-  width: 100%;
-  height: 375rpx;
-  background-color: rebeccapurple;
-  margin: 0.8rem 0;
+.container {
+  height: auto;
+  padding: 0;
+}
+
+ec-canvas {
+  width: 100vw;
+  height: 200px;
 }
 
 van-icon {
@@ -65,11 +68,13 @@ van-icon {
 
 .footBar {
   height: 44px;
-  position: relative;
+  position: fixed;
   display: flex;
   background-color: #fe6a00;
   line-height: 44px;
   text-align: center;
+  width: 100%;
+  bottom: 0;
 }
 
 .tixian {
