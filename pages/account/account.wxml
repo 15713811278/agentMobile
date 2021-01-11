@@ -1,0 +1,43 @@
+<!--pages/account/account.wxml-->
+<view class="contain">
+	<view style="height: calc(100% - 88px);">
+		<view class="product-box1">
+		</view>
+		<view class="product-box">
+			<navigator class="product-list" open-type="navigate" url="../../pages/addbank/addbank">
+				<view class="flex">
+					<view class="flex-grow">
+						<view class="sub-txt">银行卡收款账号</view>
+					</view>
+					<view class="flex-auto">
+						<view class="details">
+							<text>已添加</text>
+							<van-icon name="arrow" size="13px" />
+						</view>
+					</view>
+				</view>
+			</navigator>
+		</view>
+		<view class="product-box">
+			<navigator class="product-list"  open-type="navigate" url="../../pages/extract/extract">
+				<view class="flex">
+					<view class="flex-grow">
+						<view class="sub-txt">提现记录</view>
+					</view>
+					<view class="flex-auto">
+						<view class="details">
+							<text>查看</text>
+							<van-icon name="arrow" size="13px" />
+						</view>
+					</view>
+				</view>
+			</navigator>
+		</view>
+	</view>
+
+	<view class="footBar">
+		<navigator class="tixian" url="../../pages/reflect/reflect">
+			体现
+		</navigator>
+	</view>
+</view>

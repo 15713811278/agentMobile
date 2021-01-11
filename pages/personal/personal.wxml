@@ -20,13 +20,13 @@
 			</view>
 		</view>
 	</view>
-	<view class="second">
+	<scroll-view class="scrollView" scroll-y="true">
 		<view class="user_menu">
 			<view>
 				<text>0元</text>
 				<text>本月收入</text>
 			</view>
-			<view>
+			<view bindtap="toAccount">
 				<text>1598.4元</text>
 				<text>账户余额</text>
 			</view>
@@ -37,7 +37,7 @@
 		</view>
 		<view class="user_share">
 			<view class="flex_box  r-line">
-				<navigator>
+				<navigator url="">
 					<view class="flex">
 						<view class="flex_grow">
 							<text class="text1">分享咨询</text>
@@ -52,7 +52,7 @@
 				</navigator>
 			</view>
 			<view class="flex_box">
-				<navigator>
+				<navigator url="../../pages/product/product">
 					<view class="flex">
 						<view class="flex_grow">
 							<text class="text1">分享产品</text>

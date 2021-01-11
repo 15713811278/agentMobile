@@ -2,8 +2,56 @@
 <view class="con">
 	<view>
 		<van-tabs color="#fe6a00" line-width="120px" border="true" title-active-color="#fe6a00" swipeable="true" title-inactive-color="#000" active="{{ active }}" bind:change="onChange">
-			<van-tab title="产品彩页">内容 1</van-tab>
-			<van-tab title="节日问候">内容 2</van-tab>
+			<van-tab title="客户动态">内容 1</van-tab>
+			<van-tab title="收入变动">
+				<view class="message-list">
+					<view>
+						<view style="text-align:center;">
+							<text class="product-title">09-01 14:55:10</text>
+						</view>
+						<view class="message-list-box">
+							<text class="message-title">体现</text>
+							<text class="message-content"> <text class="price">+0</text>元</text>
+							<view class="message-link">
+								<view class="flex-grow">查看详情</view>
+								<view class="flex-auto">
+									<van-icon name="arrow" size="20px" />
+								</view>
+							</view>
+						</view>
+					</view>
+					<view>
+						<view style="text-align:center;">
+							<text class="product-title">09-01 14:55:10</text>
+						</view>
+						<view class="message-list-box">
+							<text class="message-title">体现</text>
+							<text class="message-content"> <text class="price">+0</text>元</text>
+							<view class="message-link">
+								<view class="flex-grow">查看详情</view>
+								<view class="flex-auto">
+									<van-icon name="arrow" size="20px" />
+								</view>
+							</view>
+						</view>
+					</view>
+					<view>
+						<view style="text-align:center;">
+							<text class="product-title">09-01 14:55:10</text>
+						</view>
+						<view class="message-list-box">
+							<text class="message-title">体现</text>
+							<text class="message-content"> <text class="price">+0</text>元</text>
+							<view class="message-link">
+								<view class="flex-grow">查看详情</view>
+								<view class="flex-auto">
+									<van-icon name="arrow" size="20px" />
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</van-tab>
 		</van-tabs>
 	</view>
 </view>

@@ -1,0 +1,73 @@
+/* pages/reflect/reflect.wxss */
+.contain {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#fe6a00, #ffffff);
+}
+
+
+van-cell {
+  display: block;
+  padding: 20rpx 20rpx 0rpx 20rpx;
+}
+.van-cell{
+  border-radius: 5px;
+}
+
+.money {
+  background-color: #ffffff;
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 10px;
+}
+
+.price1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666666;
+}
+
+.moneyIn {
+  position: relative;
+  margin-top: 40rpx;
+}
+
+.moneyIn text {
+  position: absolute;
+  font-size: 2rem;
+}
+
+.moneyNum {
+  border: none;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #eeeeee;
+  height: 3rem;
+  width: 92%;
+  outline: none;
+  font-size: 2rem;
+  padding-left: 30px;
+}
+
+.ablePay {
+  margin-top: 50rpx;
+  letter-spacing: 1px;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30rpx;
+}
+
+.getMoney {
+  width: 80%;
+  margin-top: 30rpx;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(48, 132, 212);
+  /* background-color: skyblue; */
+}

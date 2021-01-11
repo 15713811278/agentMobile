@@ -1,0 +1,27 @@
+/* pages/addbank/addbank.wxss */
+.van-field__body input {
+  text-align: right;
+  font-size: 16px;
+
+}
+.van-field__error-message{
+  text-align: right !important;
+}
+
+.footBar {
+  height: 44px;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: #fe6a00;
+  left: 0;
+  bottom: 0;
+  line-height: 44px;
+  text-align: center;
+}
+
+.tijiao {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}

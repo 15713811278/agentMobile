@@ -1,12 +1,31 @@
 <!--pages/costLF/costLF.wxml-->
-<view>
+<view class="section">
 	<!-- <van-datetime-picker type="year-month" value="{{ currentDate }}" min-date="{{ minDate }}" bind:input="onInput" /> -->
-	<view class="section">
-		<view class="section__title">日期选择器</view>
+	<view>
 		<picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-			<view class="picker">
-				当前选择: {{date}}
+			<view class="picker">{{date}}
+				<van-icon name="arrow-down" />
 			</view>
 		</picker>
+	</view>
+	<view class="con">
+		<view class="product-box">
+			<view class="product-list">
+				<view class="flex">
+					<view class="flex-auto">
+						<image src="../../pic/agentImg/user.png"></image>
+					</view>
+					<view class="flex-grow">
+						<view class="sub-txt">游客
+						</view>
+						<view class="details">PowerPPE产品介绍
+						</view>
+					</view>
+					<view class="flex-auto1">
+						<view class="details">2020-11-02 11:15:04</view>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
