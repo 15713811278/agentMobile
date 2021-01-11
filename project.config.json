@@ -20,12 +20,12 @@
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"compileHotReLoad": false,
 		"useIsolateContext": true,
 		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
@@ -33,7 +33,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.14.3",
 	"appid": "wx1be4b9bffe69205b",
-	"projectname": "agentMoile",
+	"projectname": "agentMobile",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

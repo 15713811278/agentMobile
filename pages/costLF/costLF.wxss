@@ -1,1 +1,90 @@
 /* pages/costLF/costLF.wxss */
+.section {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+picker {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.picker {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.product-box {
+  margin: 0;
+  background-color: #fff;
+}
+
+.product-list {
+  padding: 0.8rem 0;
+  margin: 0 1rem;
+  display: block;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-auto {
+  align-self: center;
+  flex: none;
+}
+
+.flex-auto1 {
+  flex: none;
+}
+
+image {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.flex-grow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  align-self: center;
+}
+
+.sub-txt {
+  color: #464646;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: normal;
+  margin-right: 1rem;
+  /* white-space: break-spaces; */
+  line-height: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.product-list:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.details {
+  color: #999;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.details {
+  color: #999;
+  font-weight: normal;
+  font-size: 0.75rem;
+}

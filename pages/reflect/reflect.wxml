@@ -1,0 +1,24 @@
+<!-- pages/reflect/reflect.wxml -->
+<view class="contain">
+  <view>
+    <van-cell-group>
+      <van-field value="无" label="到账账户" left-icon="contact" readonly border="{{ true }}" />
+    </van-cell-group>
+  </view>
+  <view class="money">
+    <view class="price1">提现金额</view>
+    <view class="moneyIn">
+      <text>￥</text>
+      <input type="tel" class="moneyNum"></input>
+    </view>
+    <view class="ablePay">
+      可提现余额
+      <text></text>
+      ，
+      <text style="color:rgb(86,136,183)">全部提现</text>
+    </view>
+  </view>
+  <view>
+    <button class="getMoney">提现</button>
+  </view>
+</view>

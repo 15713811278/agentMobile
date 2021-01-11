@@ -1,0 +1,81 @@
+<!--pages/product/product.wxml-->
+<view class="contain">
+	<view class="con-top">
+		<view class="top">
+			<van-icon name="bullhorn-o" />
+			分享至朋友圈即可实时跟进客户动态
+		</view>
+	</view>
+	<view class="">
+		<view class="new-list">
+			<view class="news-list-box">
+				<navigator class="flex" url="https://yun.powerpms.com/appCloud/PPE.html">
+					<view class="news-img ">
+						<image></image>
+					</view>
+					<view class="news-title">
+						<view class="news-title-txt">
+							PowerPPE
+						</view>
+						<view class="news-detail">蕴涵专业的工程项目进度控制方法论，实现统筹计划与进度管控业务的体系化、量化和线上闭环管理打造项目进度管理的“抓手”</view>
+						<view class="news-info">
+							<text class="news-info-time">￥100</text>
+							<text class="news-info-share">推广费22%</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+			<view class="news-list-box">
+				<navigator class="flex">
+					<view class="news-img ">
+						<image></image>
+					</view>
+					<view class="news-title">
+						<view class="news-title-txt">
+							Power Highlight
+						</view>
+						<view class="news-detail">专业简洁的设计工具，遵循国际标准、结合中国习惯，实现快速计划编制与进度跟踪，深受国人喜爱的概要横道图，可大大提高计划汇报与展示的效果</view>
+						<view class="news-info">
+							<text class="news-info-time">￥100</text>
+							<text class="news-info-share">推广费22%</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+			<view class="news-list-box">
+				<navigator class="flex">
+					<view class="news-img ">
+						<image></image>
+					</view>
+					<view class="news-title">
+						<view class="news-title-txt">
+							PowerPMP
+						</view>
+						<view class="news-detail">为企业提供项目管理技能实训云服务，助力企业“培养实用型技能人才”的理念落地，助力企业实现人才队伍建设，提高企业的运营绩效。</view>
+						<view class="news-info">
+							<text class="news-info-time">￥100</text>
+							<text class="news-info-share">推广费22%</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+			<view class="news-list-box">
+				<navigator class="flex">
+					<view class="news-img ">
+						<image></image>
+					</view>
+					<view class="news-title">
+						<view class="news-title-txt">
+							PowerCG
+						</view>
+						<view class="news-detail">以国际惯例的工期管理与索赔方法为核心，结合普华科技20多年来在国内外大中型项目管理的实践经验，自主研发的国际工程工期索赔与防御系统。</view>
+						<view class="news-info">
+							<text class="news-info-time">￥100</text>
+							<text class="news-info-share">推广费22%</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>

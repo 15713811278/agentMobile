@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "van-datetime-picker": "@vant/weapp/datetime-picker/index"
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-icon": "@vant/weapp/icon/index"
   },
   "navigationBarTitleText": "访客信息"
 }
