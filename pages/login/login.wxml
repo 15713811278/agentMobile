@@ -1,26 +1,15 @@
-<!--pages/login/login.wxml-->
-<view class="contain">
-	<view class="con">
-		<view class="login">
-			登录/绑定
-		</view>
-		<view class="login_1">欢迎登陆普华云服务</view>
+<view id="content" class="aligincenter flexDirectionColumn alignItemsStart">
+	<view class="loginTitle">登录/绑定</view>
+	<view class="loginDesc">欢迎登陆普华云服务</view>
+	<view style="height:48px"></view>
+	<view class="formView">
+		<input type="number" bindinput="bindKeyInput" data-name="username" class="loginInput phone" placeholder-class="input-placeholder" placeholder="请输入用户名" maxlength="{{11}}" />
+		<input type="password" bindinput="bindKeyInput" data-name="password" class="loginInput yqm" placeholder-class="input-placeholder" placeholder="请输入密码" />
 	</view>
-	<view class="tables">
-		<view class="console">
-			<van-cell-group>
-				<van-field value="{{ username }}" required clearable placeholder="请输入用户名" left-icon='manager-o' />
-
-				<van-field value="{{ password }}" type="password" placeholder="请输入密码" left-icon='records' required />
-			</van-cell-group>
-		</view>
-
-	</view>
-	<view class="btn">
-		<view class="cancel" bindtap="goPersonal">
-			取消
-		</view>
-    <view style="width:30px"></view>
-		<button class="submit">登录</button>
+	<view style="height:76px"></view>
+	<view class="aligincenter justifySpaceAround" style="width:100%;padding-bottom:100px;">
+		<van-button round bindtap="login" type="info" custom-class="loginButton">
+			登录
+		</van-button>
 	</view>
 </view>

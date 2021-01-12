@@ -1,10 +1,58 @@
 /**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+@import 'miniprogram_npm/@vant/weapp/common/index.wxss';
+
+page {
+    --theme1-color-: #fe6a00;
+    --theme2-color-: #242d56;
+
+    --grey1-color-: #666E91;
+    --grey2-color-: #969CB3;
+    --grey3-color-: #F0F2F5;
+    --grey4-color-: #EFF5FE;
+
+    --white-color-: #ffffff;
+    --black-color-: #000000;
+    --red-color-: #ff0000;
+    --red1-color-: #D0021B;
+    --yellow-color-: #F5A623;
+    --yellow1-color-: #F2E7D4;
+
+    --orange1-color-: #ff5d5d;
+
+}
+
+
+.aligincenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justifySpaceBetween {
+    justify-content: space-between;
+
+}
+
+.justifySpaceAround {
+    justify-content: space-around;
+}
+
+.justifyFlexStart {
+    justify-content: flex-start;
+}
+
+.justifyFlexEnd {
+    justify-content: flex-end;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.alignItemsStart {
+    align-items: flex-start;
+}

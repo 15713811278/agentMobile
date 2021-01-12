@@ -1,55 +1,87 @@
-/* pages/login/login.wxss */
-.contain {
+#content {
   width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.con {
-  padding: 150rpx 70rpx;
+.loginTitle {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
+  margin-left: 30px;
 }
 
-.console {
-  padding: 0 50rpx;
-
+.loginDesc {
+  font-size: 14px;
+  color: var(--grey2-color-);
+  margin-left: 30px;
 }
 
-.btn {
-  /* width: 100%; */
-  display: flex;
-  padding: 0 50rpx;
-  margin-top: 140rpx;
-  justify-content: space-around;
-
+.formView {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
-.cancel {
-  flex: 1;
+.loginInput {
+  width: 100%;
+  border-bottom: 1px solid var(--grey6-color-);
+  box-sizing: border-box;
+  padding: 18px 0 18px 43px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: left 14px center;
+  background-size: 14px;
+  font-size: 14px;
+}
+
+.input-placeholder {
+  font-size: 14px;
+  color: #C4C4C6;
+}
+
+.phone {
+  background-image: url('https://chechuanbao.oss-cn-hangzhou.aliyuncs.com/mini/phone.png');
+}
+
+.yqm {
+  background-image: url('https://chechuanbao.oss-cn-hangzhou.aliyuncs.com/mini/yqm.png');
+}
+
+.password {
+  background-image: url('https://chechuanbao.oss-cn-hangzhou.aliyuncs.com/mini/password.png');
+}
+
+.getCodeView {
+  position: relative;
+}
+
+.getCode {
+  color: var(--theme1-color-);
+  font-size: 12px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  margin-top: -8px;
+  z-index: 999;
+}
+
+.loginButton {
+  height: 42px !important;
+  width: 45vw !important;
+  margin: 0 auto;
+}
+
+.tip {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
   text-align: center;
-  background-color: rgb(24, 135, 250);
-  line-height: 46px;
-  color: #ffffff;
-  border-radius: 20px;
-  font-size: 18px;
+  font-size: 12px;
+  color: #999999;
 }
 
-.submit {
-  flex: 1;
-  color: #ffffff;
-  background-color: rgb(24, 135, 250);
-  border-radius: 20px;
-}
-button{
-  padding: 0;
-}
-
-.login {
-
-  font-size: 50rpx;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.login_1 {
-  margin-top: 20rpx;
-  font-size: 30rpx;
-  color: rgb(160, 160, 160);
+.tip>text {
+  color: var(--theme1-color-);
 }

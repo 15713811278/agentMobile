@@ -1,0 +1,9 @@
+<view class="aligincenter flexDirectionColumn" style="width:100%;height:100vh">
+    <van-image width="212px" height="164px" src="/pic/agentImg/login.png" />
+    <view style="height:12px"></view>
+    <text>登录后查看</text>
+    <view style="height:12px"></view>
+    <van-button type="info" open-type="getUserInfo" bind:getuserinfo="getuserinfo" custom-class="loginButton" color="var(--theme1-color-)">
+        点击登录
+    </van-button>
+</view>

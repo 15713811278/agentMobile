@@ -1,0 +1,12 @@
+<van-tabbar active-color="#fe6a00" inactive-color="#333333" active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item>
+        <image slot="icon" src="/pic/agentImg/index.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+        <image slot="icon-active" src="/pic/agentImg/index1.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+        新闻列表
+    </van-tabbar-item>
+    <van-tabbar-item>
+        <image slot="icon" src="/pic/agentImg/mine.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+        <image slot="icon-active" src="/pic/agentImg/mine1.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+        个人中心
+    </van-tabbar-item>
+</van-tabbar>

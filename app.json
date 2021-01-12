@@ -1,20 +1,21 @@
 {
   "pages": [
-    "pages/login/login",
+    "pages/product/product",
+    "pages/index/index",
     "pages/personal/personal",
-    
+    "pages/login/login",
+    "pages/goLogin/goLogin",
     "pages/moncome/moncome",
     "pages/account/account",
     "pages/customer/customer",
     "pages/costLF/costLF",
-    "pages/product/product",
+    
     "pages/reflect/reflect",
     "pages/extract/extract",
     "pages/addbank/addbank",
     "pages/income/income",
     "pages/postcard/postcard",
     "pages/userInfo/userInfo",
-    "pages/list/list",
     "pages/costLZ/costLZ"
   ],
   "window": {
@@ -26,5 +27,20 @@
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "van-field": "@vant/weapp/field/index"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#333333",
+    "selectedColor": "#fe6a00",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/product/product"
+      },
+      {
+        "pagePath": "pages/personal/personal"
+      }
+    ]
   }
 }

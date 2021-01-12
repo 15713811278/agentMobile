@@ -1,7 +1,10 @@
 //app.js
+'use strict';
+const config = require('./utils/config.js');
+const requestUrl = config.requestUrl;
 App({
   onLaunch: function (options) {
-   
+
     // 展示本地存储能力
     // var logs = wx.getStorageSync('logs') || []
     // logs.unshift(Date.now())
@@ -40,5 +43,82 @@ App({
   // },
   onShow() {
     const param = wx.getLaunchOptionsSync();
-  }
+  },
+  // 加密算法 R4
+  // 传入字符串 秘钥：默认powerpms
+  RC4(data, secretKey) {
+    var key = secretKey || "powerpms";
+    var seq = Array(256); //int
+    var das = Array(data.length); //code of data
+    for (var i = 0; i < 256; i++) {
+      seq[i] = i;
+    }
+
+    var j = 0;
+    for (var i = 0; i < 256; i++) {
+      var temp = seq[i];
+
+      j = (j + seq[i] + key.charCodeAt(i % key.length)) % 256;
+      seq[i] = seq[j];
+      seq[j] = temp;
+    }
+
+    var i = 0
+    for (; i < data.length; i++) {
+      das[i] = data.charCodeAt(i);
+    }
+
+    for (var x = 0; x < das.length; x++) {
+      i = (i + 1) % 256;
+      j = (j + seq[i]) % 256;
+      var temp = seq[i];
+
+      seq[i] = seq[j];
+      seq[j] = temp;
+
+      var k = (seq[i] + seq[j]) % 256;
+      das[x] = String.fromCharCode(das[x] ^ seq[k]);
+    }
+    return das.join('');
+  },
+  // 请求
+  request(url, method, option) {
+    const _this = this;
+    wx.showLoading({
+      title: '加载中...',
+    });
+    const promise = new Promise(function (resolve) {
+      wx.request({
+        url: requestUrl + url,
+        method: method,
+        data: {
+          ...option,
+        },
+        success(res) {
+          if (!res.code || res.code !== 200) {
+            wx.hideLoading();
+            wx.showModal({
+              title: '提示',
+              content: res.data.msg,
+            });
+            return;
+          }
+          wx.hideLoading();
+          resolve(res.data);
+        },
+        fail(e) {
+          wx.hideLoading();
+          wx.showModal({
+            title: '请求失败',
+            content: JSON.stringify(e),
+          });
+        },
+        complete() {
+
+        },
+      });
+    });
+    return promise;
+  },
+
 })

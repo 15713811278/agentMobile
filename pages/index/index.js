@@ -1,19 +1,13 @@
-// pages/login/login.js
-const app = getApp();
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username: "",
-    password: ""
+
   },
-  goPersonal() {
-    wx.navigateTo({
-      url: '/pages/personal/personal',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -32,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // this.getTabBar().init();
   },
 
   /**
@@ -68,21 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  bindKeyInput(e) {
-    const key = e.target.dataset.name
-    this.setData({
-      [key]: e.detail.value
-    })
-  },
-  login() {
-    const username = encodeURIComponent(app.RC4(this.data.username))
-    const password = encodeURIComponent(app.RC4(this.data.password))
-    // var params = {
-    //   username,
-    //   password
-    // }
-    app.request("/api/agent/wx/user/login", "POST", {username,password}).then(function (data) {
-    })
   }
 })
