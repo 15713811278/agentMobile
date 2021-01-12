@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="contain">
-	<view class="user_head">
+	<view class="user_head" wx:if="{{ !onOff }}">
 		<view class="user_headTop">
 			<navigator target="self" url="../../pages/income/income" open-type="navigate">
 				<van-icon name="chat-o" color='white' size="20px" />
@@ -8,10 +8,10 @@
 		</view>
 		<view class="head_right">
 			<view class="userImg">
-				<image bindtap="toUser" src="../../pic/agentImg/user.png"></image>
+				<image bindtap="toUser" src="{{userInfo.avatarUrl}}"></image>
 			</view>
 			<view class="userInfo">
-				<view class="userName">张宗禄</view>
+				<view class="userName">{{userInfo.nickName}}</view>
 				<view class="userTitle">
 					<van-icon name="friends" color='white' size="15px" />项目管理专家</view>
 			</view>
@@ -20,67 +20,84 @@
 			</view>
 		</view>
 	</view>
-	<view class="scrollView">
-		<view class="user_menu">
-			<view bindtap="toMoncome">
-				<text>0元</text>
-				<text>本月收入</text>
+	<view class="no_head" wx:if="{{ onOff }}">
+		<!-- <view>
+			<button size="default" open-type="getUserInfo" bindgetuserinfo="login" type="primary">登录</button>
+		</view> -->
+		<view class="quan">
+			<view class="no-left">
+				<image src="../../pic/agentImg/user.png"></image>
 			</view>
-			<view bindtap="toAccount">
-				<text>1598.4元</text>
-				<text>账户余额</text>
-			</view>
-			<view bindtap="toCustomer">
-				<text>0个</text>
-				<text>客户</text>
-			</view>
-		</view>
-		<view class="user_share">
-			<view class="flex_box  r-line">
-				<navigator url="">
-					<view class="flex">
-						<view class="flex_grow">
-							<text class="text1">分享咨询</text>
-							<text class="text2">最新行业资询</text>
-						</view>
-						<view class="flex_auto">
-							<view class="share_img">
-								<image src="../../pic/agentImg/nav-fl1.png"></image>
-							</view>
-						</view>
-					</view>
-				</navigator>
-			</view>
-			<view class="flex_box">
-				<navigator url="../../pages/product/product">
-					<view class="flex">
-						<view class="flex_grow">
-							<text class="text1">分享产品</text>
-							<text class="text2">提升转化率</text>
-						</view>
-						<view class="flex_auto">
-							<view class="share_img">
-								<image src="../../pic/agentImg/nav-fl2.png"></image>
-							</view>
-						</view>
-					</view>
+			<view class="noright">
+				<!-- <button class="btn" size="default" open-type="getUserInfo" bindgetuserinfo="login">登录</button> -->
+				<navigator  url="../../pages/login/login" class="btn">
+				登录
 				</navigator>
 			</view>
 		</view>
-		<view class="user_postcard">
-			<view class="postcard_one">行业海报</view>
-			<view class="canvasList">
-				<view class="list_flex">
-					<image src="../../pic/agentImg/postcard1.jpg"></image>
-				</view>
-				<view class="list_flex">
-					<image src="../../pic/agentImg/postcard2.jpg"></image>
-				</view>
-				<view class="list_flex">
-					<image src="../../pic/agentImg/postcard3.jpg"></image>
-				</view>
-			</view>
-			<navigator target="self" url="../../pages/postcard/postcard" open-type="navigate" class="link">更多</navigator>
-		</view>
+
 	</view>
-</view>
+	<view class=" scrollView">
+					<view class="user_menu" wx:if="{{ !onOff }}">
+						<view bindtap="toMoncome">
+							<text>0元</text>
+							<text>本月收入</text>
+						</view>
+						<view bindtap="toAccount">
+							<text>1598.4元</text>
+							<text>账户余额</text>
+						</view>
+						<view bindtap="toCustomer">
+							<text>0个</text>
+							<text>客户</text>
+						</view>
+					</view>
+					<view class="user_share">
+						<view class="flex_box  r-line">
+							<navigator url="">
+								<view class="flex">
+									<view class="flex_grow">
+										<text class="text1">分享咨询</text>
+										<text class="text2">最新行业资询</text>
+									</view>
+									<view class="flex_auto">
+										<view class="share_img">
+											<image src="../../pic/agentImg/nav-fl1.png"></image>
+										</view>
+									</view>
+								</view>
+							</navigator>
+						</view>
+						<view class="flex_box">
+							<navigator url="../../pages/product/product">
+								<view class="flex">
+									<view class="flex_grow">
+										<text class="text1">分享产品</text>
+										<text class="text2">提升转化率</text>
+									</view>
+									<view class="flex_auto">
+										<view class="share_img">
+											<image src="../../pic/agentImg/nav-fl2.png"></image>
+										</view>
+									</view>
+								</view>
+							</navigator>
+						</view>
+					</view>
+					<view class="user_postcard">
+						<view class="postcard_one">行业海报</view>
+						<view class="canvasList">
+							<view class="list_flex">
+								<image src="../../pic/agentImg/postcard1.jpg"></image>
+							</view>
+							<view class="list_flex">
+								<image src="../../pic/agentImg/postcard2.jpg"></image>
+							</view>
+							<view class="list_flex">
+								<image src="../../pic/agentImg/postcard3.jpg"></image>
+							</view>
+						</view>
+						<navigator target="self" url="../../pages/postcard/postcard" open-type="navigate" class="link">更多</navigator>
+					</view>
+			</view>
+		</view>

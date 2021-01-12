@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/moncome/moncome",
+    "pages/login/login",
     "pages/personal/personal",
+    
+    "pages/moncome/moncome",
     "pages/account/account",
     "pages/customer/customer",
     "pages/costLF/costLF",

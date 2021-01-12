@@ -3,6 +3,34 @@
   background-color: #f5f5f5;
 }
 
+.no_head {
+  height: 160px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 999;
+  background-color: #fe6a00;
+}
+.no_head .quan{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.no-left image{
+  width: 100px;
+  height: 100px;
+}
+.noright{
+  width: 48%;
+}
+.btn{
+  background-color: #fe6a00;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
 .user_head {
   height: 160px;
   width: 100%;
@@ -14,19 +42,23 @@
   box-sizing: border-box;
   z-index: 999;
 }
-.scrollView{
+
+.scrollView {
   margin-top: 160px;
 }
-.user_headTop{
+
+.user_headTop {
   display: flex;
   margin-bottom: 10rpx;
   justify-content: flex-end;
 }
+
 .user_head image {
   width: 70px;
   height: 70px;
 }
-.second{
+
+.second {
   margin-top: 160px;
 }
 
